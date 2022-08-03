@@ -1,0 +1,228 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 50px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  list-style-type: none;
+  font-size: x-large;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select, form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+.date::placeholder {
+  color: black;
+}
+
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ------- Ideas ------- */
+
+.col2 {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query for Desktop ------- */
+
+/* *** media query for header */
+
+@media all and (min-width: 480px) {
+  header {
+    /* Changes the default setting from `block` to `flex`. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    align-items: center;
+    justify-content: center;
+  }
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+  .logo {
+    font-size: 30px;
+    justify-content: center;
+  }
+}
+
+/* rule for Form area */
+
+@media all and (min-width: 1200px) {
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .space-between {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* rule for About section */
+
+@media all and (min-width: 750px) {
+  .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .padding {
+    margin: 10px;
+  }
+}
+
+/* rule for Ideas section */
+
+@media all and (min-width: 750px) {
+  .picture-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .col2 {
+    flex: 1 0 calc(35% - 20px);
+    margin: 5px;
+  }
+  .padding {
+    margin: 10px;
+  }
+}

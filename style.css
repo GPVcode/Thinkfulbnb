@@ -6,7 +6,7 @@ body {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 40px;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
@@ -60,18 +60,20 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: auto;
 }
 
 .logo {
+  display: flex;
   font-family: "Pangolin", cursive;
-  font-size: 50px;
+  font-size: 85px;
   color: #fff;
 }
 
 header nav {
   display: flex;
   justify-content: center;
+
 }
 
 header nav ul {
@@ -128,6 +130,12 @@ form button {
 
 .date::placeholder {
   color: black;
+}
+
+input, select {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .space-between {

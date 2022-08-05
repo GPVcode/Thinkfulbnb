@@ -41,7 +41,7 @@
           <div class="form-container">
             <div class="item space-between">
               <label for="location">Location</label>
-              <input id="location" type="text" name="location" placeholder="Search destination" autofocus="on">
+              <input class="formField" id="location" type="text" name="location" placeholder="Search destination" autofocus="on">
             </div>
 
             <div class="item space-between">
@@ -50,8 +50,6 @@
                 pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" placeholder="mm/dd/yyyy"/>
             </div>
 
-
-
             <div class="item space-between">
               <label for="date">Depart</label>
               <input id="date" class="date" type="date" name="date" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" placeholder="mm/dd/yyyy">
@@ -59,7 +57,7 @@
 
             <div class="item space-between">
               <label for="rentals">Type</label>
-              <select name="rentals" size="1">
+              <select name="rentals" size="1" class="formField">
                 <option value="apartment">Apartment</option>
                 <option value="barn">Barn</option>
                 <option value="castle">Castle</option>
